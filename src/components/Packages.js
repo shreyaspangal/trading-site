@@ -65,11 +65,11 @@ const styles = {
 const Packages = () => {
     return (
         <Box sx={{ margin: "1rem 1.5rem" }}>
-            <Card elevation={4} sx={{ padding: '1rem', borderRadius: CardBorderRadius }}>
+            <Card elevation={4} sx={{ padding: '1rem', borderRadius: CardBorderRadius, width: '343px', maxWidth: '90%' }}>
                 <Typography component="p" mb={2} sx={{ fontSize: '14px' }}>
                     Best Investment Plans
                 </Typography>
-                <Stack direction="row" justifyContent="space-between" spacing={2}>
+                <Stack direction="row" justifyContent="space-between">
                     <Box>
                         <CardActionArea>
                             <Card sx={styles.CardForIcon} elevation={2}>
@@ -114,6 +114,7 @@ const Packages = () => {
             </Card>
             {/* Trading packages starts here */}
             <Stack mt={2} spacing={2}>
+                {/* Card 1 */}
                 <Card sx={styles.PackageCard}>
                     <Box display="flex" justifyContent="space-between" width="228px">
                         <PackageTitle>
@@ -152,6 +153,7 @@ const Packages = () => {
                         Invest Now
                     </Button>
                 </Card>
+                {/* Card 2 */}
                 <Card sx={styles.PackageCard}>
                     <Box display="flex" justifyContent="space-between" width="228px">
                         <PackageTitle>
@@ -190,6 +192,7 @@ const Packages = () => {
                         Invest Now
                     </Button>
                 </Card>
+                {/* Card 3 */}
                 <Card sx={styles.PackageCard}>
                     <Box display="flex" justifyContent="space-between" width="228px">
                         <PackageTitle>
