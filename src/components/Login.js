@@ -1,5 +1,5 @@
 import React from "react";
-import Img from '../assets/graph.png';
+import Img from '../assets/graph.svg';
 import { Stack, TextField, Button, Box, Link, Grid } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
@@ -77,7 +77,7 @@ const Login = () => {
             <Grid container direction={{ sx: 'column', md: 'row' }} justifyContent="center" alignItems="center" mt={3} sx={{ height: "100vh" }}>
                 <Grid item xs={12} md={6}>
                     <Box sx={styles.HeroBox}>
-                        <img src={Img} alt="Graph" width="220" height="150" />
+                        <img src={Img} alt="Graph" width="226" height="151" />
                         <Box component="p" sx={styles.HeroTitle}>
                             Login with your account
                         </Box>
