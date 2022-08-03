@@ -29,6 +29,10 @@ const styles = {
         textAlign: 'center',
         width: '18ch',
         margin: 'auto'
+    },
+    FooterText: {
+        color: "#7A848C",
+        fontSize: '14px'
     }
 }
 
@@ -130,7 +134,7 @@ const Register = () => {
                             <Button variant="contained" endIcon={<ArrowForwardIosIcon />} sx={styles.RegisterBtn} onClick={handleFormSubmit}>
                                 Register
                             </Button>
-                            <Box sx={{ color: "#7A848C" }} component="p">
+                            <Box sx={styles.FooterText} component="p">
                                 Already have an account? <Link href="#" underline="none" color="#043353">
                                     {'Login'}
                                 </Link>
