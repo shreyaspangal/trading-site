@@ -5,7 +5,8 @@ import RechargeIcon from '../assets/power-bank.svg';
 import WithdrawlIcon from '../assets/withdraw.svg';
 import CompanyIcon from '../assets/office-building.svg';
 import { Box, Card, Typography, CardActionArea, Stack, Button } from '@mui/material';
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
+import Footer from './Footer';
 
 const PackageTitle = styled(Typography)(({ theme }) => ({
     marginBottom: '.5rem',
@@ -38,7 +39,6 @@ const styles = {
         alignItems: 'center',
         height: '66px',
         width: '66px',
-        height: '3.5rem',
         borderRadius: '12.49px',
     },
     CardIconTitle: {
@@ -64,7 +64,7 @@ const styles = {
 
 const Packages = () => {
     return (
-        <Box sx={{ margin: "1rem 1.5rem" }}>
+        <Box sx={{ margin: "1rem 1.5rem", marginBottom: '5rem' }}>
             <Card elevation={4} sx={{ padding: '1rem', borderRadius: CardBorderRadius, width: '343px', maxWidth: '90%' }}>
                 <Typography component="p" mb={2} sx={{ fontSize: '14px' }}>
                     Best Investment Plans
@@ -73,7 +73,8 @@ const Packages = () => {
                     <Box>
                         <CardActionArea>
                             <Card sx={styles.CardForIcon} elevation={2}>
-                                <img src={TelegramIcon} width="32px" />
+                                <img src={TelegramIcon} width="32px"
+                                    alt="telegram icon" />
                             </Card>
                         </CardActionArea>
                         <Typography component="p" sx={styles.CardIconTitle}>
@@ -83,7 +84,7 @@ const Packages = () => {
                     <Box>
                         <CardActionArea>
                             <Card sx={styles.CardForIcon} elevation={2}>
-                                <img src={RechargeIcon} width="32px" />
+                                <img src={RechargeIcon} width="32px" alt="recharge icon" />
                             </Card>
                         </CardActionArea>
                         <Typography component="p" sx={styles.CardIconTitle}>
@@ -93,7 +94,7 @@ const Packages = () => {
                     <Box>
                         <CardActionArea>
                             <Card sx={styles.CardForIcon} elevation={2}>
-                                <img src={WithdrawlIcon} width="32px" />
+                                <img src={WithdrawlIcon} width="32px" alt="withdrawl icon" />
                             </Card>
                         </CardActionArea>
                         <Typography component="p" sx={styles.CardIconTitle}>
@@ -103,7 +104,7 @@ const Packages = () => {
                     <Box>
                         <CardActionArea>
                             <Card sx={styles.CardForIcon} elevation={2}>
-                                <img src={CompanyIcon} width="32px" />
+                                <img src={CompanyIcon} width="32px" alt="company icon" />
                             </Card>
                         </CardActionArea>
                         <Typography component="p" sx={styles.CardIconTitle}>
@@ -232,6 +233,7 @@ const Packages = () => {
                     </Button>
                 </Card>
             </Stack>
+            <Footer />
         </Box>
     )
 }

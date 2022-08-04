@@ -1,11 +1,11 @@
 import React from 'react';
 import QrCode from '../assets/qr-code.svg';
-import { Box, Typography, Button, CssBaseline, Paper, BottomNavigation, BottomNavigationAction, Card, Stack, FormControl, OutlinedInput } from '@mui/material';
+import {
+    Box, Typography, Button, CssBaseline,
+    Card, Stack, FormControl, OutlinedInput
+} from '@mui/material';
 import { styled } from '@mui/material/styles';
-import HomeIcon from '@mui/icons-material/Home';
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
-import GroupIcon from '@mui/icons-material/Group';
-import PersonIcon from '@mui/icons-material/Person';
+import Footer from './Footer';
 
 const CardBgColor = '#F5F6F8';
 
@@ -43,10 +43,7 @@ const SmallGreyText = styled(Typography)(({ theme }) => ({
     color: '#7A848C'
 }));
 
-
 const Invitation = () => {
-    const [value, setValue] = React.useState(0);
-
     return (
         <Box m={2} mb={10}>
             <CssBaseline />
@@ -111,24 +108,8 @@ const Invitation = () => {
                 </Card>
             </Box>
             {/* Graph Section */}
-            <Card>
-
-            </Card>
-            {/* Footer Navigation*/}
-            <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-                <BottomNavigation
-                    showLabels
-                    value={value}
-                    onChange={(event, newValue) => {
-                        setValue(newValue);
-                    }}
-                >
-                    <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-                    <BottomNavigationAction label="Invite" icon={<PersonAddIcon />} />
-                    <BottomNavigationAction label="Team" icon={<GroupIcon />} />
-                    <BottomNavigationAction label="Profile" icon={<PersonIcon />} />
-                </BottomNavigation>
-            </Paper>
+            {/* Footer Section */}
+            <Footer />
         </Box>
     )
 }
