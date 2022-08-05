@@ -1,12 +1,10 @@
 import React from 'react';
-import {
-    Paper, BottomNavigation, BottomNavigationAction, Typography, Box, Stack, Button
-} from '@mui/material';
+import { Paper, Typography, Box, Stack } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import GroupIcon from '@mui/icons-material/Group';
 import PersonIcon from '@mui/icons-material/Person';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "./Footer.css";
 
 const styles = {
@@ -26,24 +24,9 @@ const styles = {
     }
 }
 
-const Footer = ({ number }) => {
-    const [value, setValue] = React.useState(0);
-
+const Footer = () => {
     return (
         < Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, width: '100%', height: '56px' }} elevation={3} >
-            {/* <BottomNavigation
-                showLabels
-                value={value}
-                onChange={(event, newValue) => {
-                    setValue(newValue);
-                    console.log(event.target)
-                }}
-            >
-                <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-                <BottomNavigationAction label="Invite" icon={<PersonAddIcon />} />
-                <BottomNavigationAction label="Team" icon={<GroupIcon />} />
-                <BottomNavigationAction label="Profile" icon={<PersonIcon />} />
-            </BottomNavigation> */}
             <Stack direction="row" justifyContent="space-around" alignItems="center" height="100%">
                 <NavLink
                     to="/"

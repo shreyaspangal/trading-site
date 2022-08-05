@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
-import { Box, Typography, Button, Stack } from '@mui/material';
+import { Box, Typography, Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
