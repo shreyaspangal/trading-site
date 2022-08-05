@@ -1,7 +1,9 @@
 import React from "react";
 import Img from '../assets/graph.svg';
-import { Stack, TextField, Button, Box, Link, Grid } from '@mui/material';
+import { Stack, TextField, Button, Box, Grid } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { Link } from 'react-router-dom';
+import "./Register.css";
 
 const styles = {
     RegisterBtn: {
@@ -32,7 +34,7 @@ const styles = {
     },
     FooterText: {
         color: "#7A848C",
-        fontSize: '14px'
+        fontSize: '14px',
     }
 }
 
@@ -135,8 +137,8 @@ const Register = () => {
                                 Register
                             </Button>
                             <Box sx={styles.FooterText} component="p">
-                                Already have an account? <Link href="#" underline="none" color="#043353">
-                                    {'Login'}
+                                Already have an account? <Link to="/login" className="login-link">
+                                    Login
                                 </Link>
                             </Box>
                         </Stack>

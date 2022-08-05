@@ -1,7 +1,9 @@
 import React from "react";
 import Img from '../assets/graph.svg';
-import { Stack, TextField, Button, Box, Link, Grid } from '@mui/material';
+import { Stack, TextField, Button, Box, Grid } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { Link as RouterLink } from 'react-router-dom';
+import './Login.css';
 
 const styles = {
     LoginBtn: {
@@ -45,7 +47,7 @@ const styles = {
         textAlign: 'center',
         paddingTop: "2rem",
         fontSize: '14px'
-    }
+    },
 }
 
 const Login = () => {
@@ -110,14 +112,14 @@ const Login = () => {
                             <Button variant="contained" endIcon={<ArrowForwardIosIcon />} sx={styles.LoginBtn} onClick={handleFormSubmit}>
                                 Login
                             </Button>
-                            <Link href="#" underline="always" color="#043353" variant="body2" sx={{ fontWeight: "bold" }}>
-                                {'Forgot password?'}
-                            </Link>
+                            <RouterLink to="#" className="forgot-password-link">
+                                Forgot password?
+                            </RouterLink>
                         </Stack>
                         <Box sx={styles.FooterText} component="p">
-                            New member? <Link href="#" underline="none" color="#043353">
-                                {'Register'}
-                            </Link>
+                            New member? <RouterLink to="/register" className="register-link">
+                                Register
+                            </RouterLink>
                         </Box>
                     </Stack>
                 </Grid>

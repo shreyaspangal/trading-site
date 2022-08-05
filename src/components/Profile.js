@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Card, Typography, CardActionArea, Stack, Button, Grid } from '@mui/material';
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
+import { Box, Card, Typography, Grid } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import PersonIcon from '@mui/icons-material/Person';
 import Data from '../db/Data';
 import Footer from './Footer';
@@ -51,7 +51,7 @@ const Profile = () => {
                 {Data.map(item => (
                     <Grid item xs={4} key={item.name}>
                         <Box sx={{ display: 'flex', flexDirection: 'column', padding: '.5rem', margin: '.3rem', alignItems: 'center', justifyContent: 'center' }}>
-                            <GridItem color="#081F32">
+                            <GridItem color="#195756">
                                 {item.icon()}
                             </GridItem>
                             <GridItem>
