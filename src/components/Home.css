@@ -1,0 +1,8 @@
+.goToBtn {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    background-color: #043353;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+}

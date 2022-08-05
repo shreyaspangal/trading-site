@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from './Footer';
 import { Box, Typography, Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
+import "./Home.css";
 
 const Home = () => {
     return (
@@ -12,8 +13,8 @@ const Home = () => {
                 </Typography>
             </Box>
             <Stack direction="row" justifyContent="space-around">
-                <Link to="/login">Go to Login</Link>
-                <Link to="/register">Go to Register</Link>
+                <Link to="/login" className='goToBtn'>Go to Login</Link>
+                <Link to="/register" className='goToBtn'>Go to Register</Link>
             </Stack>
             <Footer />
         </>
