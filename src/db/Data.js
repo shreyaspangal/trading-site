@@ -7,7 +7,6 @@ import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
 import AppBlockingOutlinedIcon from '@mui/icons-material/AppBlockingOutlined';
 import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 import ListAltOutlinedIcon from '@mui/icons-material/ListAltOutlined';
-import ProductionQuantityLimitsOutlinedIcon from '@mui/icons-material/ProductionQuantityLimitsOutlined';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import ChatIcon from '@mui/icons-material/Chat';
 import RememberMeIcon from '@mui/icons-material/RememberMe';
