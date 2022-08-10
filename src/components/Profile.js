@@ -31,6 +31,7 @@ const IdTypography = styled(Typography)(({ theme }) => ({
 const GridItem = styled(Typography)(({ theme }) => ({
     fontFamily: 'Inter',
     fontSize: '11px',
+    textAlign: 'center'
 }));
 
 const Profile = () => {
